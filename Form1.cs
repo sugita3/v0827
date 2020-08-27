@@ -37,7 +37,8 @@ namespace v0827
         private void timer1_Tick(object sender, EventArgs e)
         {
            
-
+            label1.Left=vx;
+            label1.Top=vy;
             Point mp = MousePosition;
             mp = PointToClient(mp);
             label2.Text = "" + mp.X + "," + mp.Y;
